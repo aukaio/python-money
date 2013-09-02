@@ -293,7 +293,7 @@ CURRENCY['BSD'] = Currency(code='BSD', numeric='044', name='Bahamian Dollar', co
 CURRENCY['BWP'] = Currency(code='BWP', numeric='072', name='Pula', countries=['BOTSWANA'])
 CURRENCY['GYD'] = Currency(code='GYD', numeric='328', name='Guyana Dollar', countries=['GUYANA'])
 CURRENCY['XTS'] = Currency(code='XTS', numeric='963', name='Codes specifically reserved for testing purposes', countries=[])
-CURRENCY['LYD'] = Currency(code='LYD', numeric='434', name='Libyan Dinar', countries=['LIBYAN ARAB JAMAHIRIYA'])
+CURRENCY['LYD'] = Currency(code='LYD', numeric='434', name='Libyan Dinar', decimals=3, countries=['LIBYAN ARAB JAMAHIRIYA'])
 CURRENCY['EGP'] = Currency(code='EGP', numeric='818', name='Egyptian Pound', countries=['EGYPT'])
 CURRENCY['THB'] = Currency(code='THB', numeric='764', name='Baht', countries=['THAILAND'])
 CURRENCY['MKD'] = Currency(code='MKD', numeric='807', name='Denar', countries=['MACEDONIA'])
