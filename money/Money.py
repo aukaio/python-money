@@ -42,15 +42,14 @@ class Money:
     amount = Decimal("0.0")
     currency = DEFAULT_CURRENCY
     def __init__ (self, amount=Decimal("0.0"), currency=None):
-        if not isinstance(amount, Decimal):
-            amount = Decimal(str(amount or 0))
-        self.amount = amount
         if not currency:
             self.currency = DEFAULT_CURRENCY
         else:
             if not isinstance(currency, Currency):
                 currency = CURRENCY[str(currency).upper()]
             self.currency = currency
+        amount = Decimal("%.*f" % (self.currency.decimals, float(amount or 0)))
+        self.amount = amount
 
     def __unicode__(self):
         return unicode(self.amount)
