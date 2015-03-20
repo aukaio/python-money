@@ -1,5 +1,5 @@
 import os
-from setuptools import setup
+from setuptools import setup, find_packages
 from distutils.util import convert_path
 from distutils.command.install import INSTALL_SCHEMES
 from version import get_git_version
@@ -48,7 +48,7 @@ for dirpath, dirnames, filenames in os.walk(start_dir):
 setup(
     name='python-money',
     version=get_git_version(),
-    packages=packages,
+    packages=find_packages(),
     data_files=data_files,
     url='http://github.com/poswald/python-money',
     description='Primitives for working with money and currencies in Python',
